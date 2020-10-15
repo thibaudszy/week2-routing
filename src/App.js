@@ -8,17 +8,17 @@ import NavBar from "./components/NavBar";
 const routes = [
   {
     component: { HomePage },
-    name: "home",
+    name: "Home ",
     path: "/",
   },
   {
     component: { AboutPage },
-    name: "About",
+    name: "About ",
     path: "/about",
   },
   {
     component: { HomePage },
-    name: "Discover",
+    name: "Discover ",
     path: "/discover",
   },
 ];
