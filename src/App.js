@@ -7,14 +7,17 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 const routes = [
   {
+    component: { HomePage },
     name: "home",
     path: "/",
   },
   {
+    component: { AboutPage },
     name: "About",
     path: "/about",
   },
   {
+    component: { HomePage },
     name: "Discover",
     path: "/discover",
   },
@@ -24,6 +27,9 @@ function App() {
     <div className="App">
       <NavBar links={routes} />
       <Switch>
+        {/* {routes.map(({ path, component }) => (
+          <Route path={path} component={component} />
+        ))} */}
         <Route path="/discover" component={DiscoverPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/" component={HomePage} />

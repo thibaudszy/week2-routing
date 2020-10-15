@@ -6,13 +6,12 @@ export default function NavBar({ links }) {
     <div>
       {links.map(({ name, path }) => (
         <NavLink
-          exact
-          to={path}
           activeStyle={{
             fontWeight: "bold",
             color: "black",
           }}
           key={path}
+          exact
           to={path}
         >
           {name}
